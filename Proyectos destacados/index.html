@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Dragon</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/gestion.css">
+    <link rel="stylesheet" href="../css/infraestructura.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/destacados.css">
+    <link rel="stylesheet" href="../css/proyectos.css">
+    <link rel="shortcut icon" href="../mages/Logo/Iso Rojo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/996b34cf47.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</head>
+
+<body>
+    <div class="menu__wrapper" id="top">
+        <div class="menu__bar">
+            <a href="../" title="Logo" class="logo">
+                <img src="../images/Logo/Grupo Dragon_ Logo Blanco.png" alt="Logo" class="logo-img2" id="logo-img">
+            </a>
+            <img class="menu-icon" src="../images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+                onclick="toggleMenu(this)">
+            <ul class="navigation">
+                <li><a href="../index.html" id="inicio" title="Inicio">Inicio</a></li>
+                <li><a href="#" id="link-nosotros">Nosotros</a></li>
+                <li><a href="#" id="link-proyectos">Proyectos Destacados</a></li>
+                <li><a href="#" id="link-servicios">Servicios Destacados</a></li>
+          <li><a href="#" id="contacto" title="Contacto">Contacto</a></li>
+            </ul>
+
+            <script>
+                document.getElementById("inicio").addEventListener("click", function () {
+                    window.location.href = "../";
+                });
+
+                document.getElementById("link-nosotros").addEventListener("click", function () {
+                    window.location.href = "../Nosotros/";
+                });
+
+            
+
+                document.getElementById("link-servicios").addEventListener("click", function () {
+                    window.location.href = "../Servicios destacados/";
+                });
+
+                
+               document.getElementById("contacto").addEventListener("click", function () {
+          window.location.href = "../index.html#contacto";
+        });
+            </script>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.navigation a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <style>
+        #logo-img {
+            transition: all 0.3s ease;
+        }
+    </style>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="../images/proyectos/oleo.jpg">
+                <div class="content">
+
+                    <div class="title">Oleoducto
+                    </div>
+                    <div class="topic">CG8-PTC CD Distrito I</div>
+                    <div class="des">
+                        Acondicionamiento del suelo, detección y cateo del
+                        oleoducto, tendido de ductos aéreos con aislación y
+                        soportería. Construcción y montaje de bases,
+                        soportes, cuellos de cisne y muertos de anclaje.
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/proyectos/distritoII.jpg">
+                <div class="content">
+
+                    <div class="title">Módulo de Inyección</div>
+                    <div class="topic"> Zona el Lago
+                        Distrito ll
+                    </div>
+                    <div class="des">
+                        Construcción y montaje del skid para sistema de
+                        regulación de presión, instalación de sumideros de
+                        drenajes, RTU asociadas, y TGBT. Canalización,
+                        tendido y conexionado de cables, montaje de
+                        sistemas de aislación y tracing.
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/proyectos/distritoXIIV.jpg">
+                <div class="content">
+
+                    <div class="title">Adecuación compresores</div>
+                    <div class="topic">JO1 -
+                        Distrito 8
+                    </div>
+                    <div class="des">
+                        Desmontaje, traslado y montaje de equipos,
+                        construcción de prefabricados de piping y vallas de
+                        protección vehicular. Aislación y tracing en líneas,
+                        cableado e interconexión de equipos.
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/proyectos/puestovera.jpeg">
+                <div class="content">
+
+                    <div class="title">Obra Civil en </div>
+                    <div class="topic">Batería Puesto Vera
+                    </div>
+                    <div class="des">
+                        Construcción de platea y muros de contención para
+                        recinto de tanques elevados existentes.
+                        Construcción de plateas de hormigón armado para
+                        tanques futuros, contención de derrames y bomba
+                        de inyección.
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/proyectos/axion.png">
+                <div class="content">
+
+                    <div class="title">Ampliación terminal </div>
+                    <div class="topic">de Despacho AXION</div>
+                    <div class="des">
+                        Proyecto de ampliación de la Terminal de Despacho AXION mediante la construcción del tanque TK15
+                        (1000 m³ brutos de etanol), incluyendo ingeniería, montaje estructural bajo norma API 650,
+                        conexiones con planta existente, sistema de protección contra incendios, tratamiento
+                        superficial, instalación eléctrica y de instrumentación, y puesta en marcha completa. Ubicación:
+                        Caleta Paula, Santa Cruz.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="../images/proyectos/Captura de pantalla 2025-07-22 152847.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/proyectos/Captura de pantalla 2025-07-22 153044.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/proyectos/Captura de pantalla 2025-07-22 153052.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/proyectos/Captura de pantalla 2025-07-22 153058.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../images/proyectos/Captura de pantalla 2025-07-22 154546.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev">
+                << /button>
+                    <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+
+
+
+
+
+
+    <!-- División con sombra -->
+    <div class="divider"></div>
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <img src="../images/Logo/Grupo Dragon_ Logo Negro.png" alt="Grupo Dragón Logo">
+        </div>
+        <div class="footer-right">
+            <!-- Contenedor para centrar el ícono y el copyright -->
+            <div class="footer-center">
+                <a href="https://www.linkedin.com/company/grupo-dragon-/?originalSubdomain=ar" target="_blank">
+                    <img src="../images/Assets/Footer/Grupo Dragon_ icono_ In.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <p style="color: black;">Copyright © 2024 Grupo Dragón</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Estilos personalizados para centrar el reCAPTCHA */
+        .g-recaptcha {
+            display: inline-block;
+            /* Asegura que el recaptcha se trate como un elemento en línea */
+        }
+
+        .captcha-container {
+            text-align: center;
+            /* Centra el contenido del contenedor */
+            margin: 20px 0;
+            /* Añade margen superior e inferior para separación */
+        }
+    </style>
+
+    <script src="../java/div.js"></script>
+    <script src="../java/script.js"></script>
+    <script src="../java/nav.js"></script>
+    <script src="../java/scrolnav.js"></script>
+    <script src="../java/logo.js"></script>
+    <script src="../java/popup.js"></script>
+    <script src="../java/app.js"></script>
+</body>
+
+</html>

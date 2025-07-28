@@ -1,0 +1,155 @@
+/* Sección Infraestructura */
+.infraestructura-section {
+    padding: 60px 0;
+    background-image: url('../images/Assets/infraestructura/Grupo\ Dragon_\ Infraestructura\ Fondo.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Color del texto */
+    text-align: left;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+
+h1 {
+    font-family: 'OpenSans-Bold';
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: left; /* Alinea el h1 a la izquierda */
+}
+
+.infraestructura-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en líneas múltiples si es necesario */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.infraestructura-item {
+    flex: 1 1 30%; /* Ajusta los elementos a 30% del contenedor */
+    min-width: 280px; /* Asegura que los elementos tengan un tamaño mínimo */
+}
+
+.infraestructura-item h2 {
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000; /* Color del h2 */
+}
+
+.infraestructura-item p {
+    font-family: 'OpenSans-Regular';
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; /* Color del texto de las direcciones */
+}
+
+@media (max-width: 768px) {
+    .infraestructura-section {
+        padding: 40px; /* Ajusta el padding total a 40px en móviles */
+    }
+
+    .infraestructura-content {
+        gap: 20px; /* Espacio entre elementos */
+        justify-content: center; /* Centra los elementos dentro del contenedor */
+    }
+
+    .infraestructura-item {
+        flex: 1 1 calc(50% - 10px); /* Ajusta el tamaño para que dos elementos quepan en una fila */
+        min-width: 160px; /* Reduce el ancho mínimo para pantallas más pequeñas */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título principal para móviles */
+    }
+
+    .infraestructura-item h2 {
+        font-size: 1.3rem; /* Ajusta el tamaño del h2 para móviles */
+    }
+
+    .infraestructura-item p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto de las direcciones para móviles */
+    }
+}
+
+
+/* Sección Equipamiento Productivo */
+.equipamiento-section {
+    padding: 60px 0;
+    background-image: url('../images/infraestructura/fondo.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Color del texto */
+    text-align: left;
+}
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+  
+}
+
+.container2 h1 {
+    font-family: 'OpenSans-Bold';
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: left; /* Alinea el h1 a la izquierda */
+    -webkit-text-stroke: 1px #030303;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+.equipamiento-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en líneas múltiples */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.equip-item {
+    
+    flex: 1 1 30%; /* Ajusta los elementos a 30% del contenedor */
+    min-width: 280px; /* Asegura que los elementos tengan un tamaño mínimo */
+}
+.equip-item h2 {
+    font-family: 'OpenSans-Bold';
+    font-size: 2rem; /* Tamaño de los números */
+    color: #fff; /* Color del número */
+    margin-bottom: 10px;
+    -webkit-text-stroke: 1px #fff; /* Trazo blanco alrededor del texto */
+}
+
+.equip-item p {
+    font-family: 'OpenSans-Bold';
+    font-size: 1rem; /* Tamaño del texto debajo de los números */
+    color: #fff; /* Color del texto */
+}
+
+@media (max-width:786px){
+
+    .equipamiento-section h1{
+        -webkit-text-stroke: 0.5px #fff; 
+font-size: 1.5rem;
+    }
+    
+    .equip-item {
+        min-width: 0px; 
+    }
+
+    .equip-item p{
+        font-size: 0.7rem;
+    }
+}

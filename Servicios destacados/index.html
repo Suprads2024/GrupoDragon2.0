@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Dragon</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/nosotros.css">
+  <link rel="stylesheet" href="../css/popup.css">
+  <link rel="stylesheet" href="../css/gestion.css">
+  <link rel="stylesheet" href="../css/infraestructura.css">
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/destacados.css">
+  <link rel="shortcut icon" href="../mages/Logo/Iso Rojo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/996b34cf47.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  
+</head>
+
+<body>
+  <div class="menu__wrapper" id="top">
+    <div class="menu__bar">
+      <a href="#" id="inicio"title="Logo" class="logo">
+        <img src="../images/Logo/Grupo Dragon_ Logo Blanco.png" alt="Logo" class="logo-img2" id="logo-img">
+      </a>
+      <img class="menu-icon" src="../images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+        onclick="toggleMenu(this)">
+      <ul class="navigation">
+        <li><a href="../index.html" id="inicio" title="Inicio">Inicio</a></li>
+        <li><a href="#" id="link-nosotros">Nosotros</a></li>
+        <li><a href="#" id="link-proyectos">Proyectos Destacados</a></li>
+        <li><a href="#" id="link-servicios">Servicios Destacados</a></li>
+        <li><a href="#" id="contacto" title="Contacto">Contacto</a></li>
+      </ul>
+ 
+      <script>
+         document.getElementById("inicio").addEventListener("click", function () {
+          window.location.href = "../";
+        });
+
+        document.getElementById("link-nosotros").addEventListener("click", function () {
+          window.location.href = "../Nosotros/";
+        });
+
+        document.getElementById("link-proyectos").addEventListener("click", function () {
+          window.location.href = "../Proyectos destacados/";
+        });
+
+               document.getElementById("contacto").addEventListener("click", function () {
+          window.location.href = "../index.html#contacto";
+        });
+      </script>
+
+      
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.navigation a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+  <style>
+    #logo-img {
+      transition: all 0.3s ease;
+    }
+  </style>
+
+
+<!-- Sección con 5 tarjetas en dos filas: 3 arriba y 2 abajo -->
+<div class="social-section">
+  <div class="container">
+    <!-- Fila 1: contenedor de 3 tarjetas -->
+    <div class="row">
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <div class="icon">
+             
+        
+            </div>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <ul>
+              <li>Construcción de oleoductos, gasoductos y acueductos</li>
+              <li>Revamping de baterías y plantas de tratamiento</li>
+              <li>Plantas de inyección de agua y compresoras de gas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <div class="icon">
+            
+          
+            </div>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <ul>
+              <li>Tanques de gran porte (más de 500 m³)</li>
+              <li>Tanques pequeños (40, 160 y 320 m³)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <div class="icon">
+          
+             
+            </div>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <ul>
+              <li>Calentadores indirectos de 2 m³/h a 50 m³/h</li>
+              <li>Automatización de puentes de gas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fila 2: contenedor de 2 tarjetas -->
+    <div class="row">
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <div class="icon">
+         
+            
+            </div>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <ul>
+              <li>Instalación de cintas calefactoras</li>
+              <li>Recubrimiento con lana mineral y aluminio</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <div class="icon">
+          
+         
+            </div>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <ul>
+              <li>Obras eléctricas y líneas de MT y AT</li>
+              <li>Electrificación, BOP y paneles solares</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <!-- División con sombra -->
+  <div class="divider"></div>
+
+  <!-- Footer -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <img src="../images/Logo/Grupo Dragon_ Logo Negro.png" alt="Grupo Dragón Logo">
+    </div>
+    <div class="footer-right">
+      <!-- Contenedor para centrar el ícono y el copyright -->
+      <div class="footer-center">
+        <a href="https://www.linkedin.com/company/grupo-dragon-/?originalSubdomain=ar" target="_blank">
+          <img src="../images/Assets/Footer/Grupo Dragon_ icono_ In.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <p style="color: black;">Copyright © 2024 Grupo Dragón</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* Estilos personalizados para centrar el reCAPTCHA */
+    .g-recaptcha {
+      display: inline-block;
+      /* Asegura que el recaptcha se trate como un elemento en línea */
+    }
+
+    .captcha-container {
+      text-align: center;
+      /* Centra el contenido del contenedor */
+      margin: 20px 0;
+      /* Añade margen superior e inferior para separación */
+    }
+  </style>
+
+  <script src="../java/div.js"></script>
+  <script src="../java/script.js"></script>
+  <script src="../java/nav.js"></script>
+  <script src="../java/scrolnav.js"></script>
+  <script src="../java/logo.js"></script>
+  <script src="../java/popup.js"></script>
+</body>
+
+</html>

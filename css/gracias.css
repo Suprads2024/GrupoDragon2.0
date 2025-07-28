@@ -1,0 +1,48 @@
+.graciash1{
+    margin-bottom: 10px;
+}
+
+
+.main-banner2 {
+
+    background-image: url('../images/Header/Grupo\ Dragon_\ Header\ fondo\ \(1\).jpg');
+    /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el div */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    height: 100vh;
+    border-bottom-left-radius: 30px;
+    /* Redondea la esquina inferior izquierda */
+    border-bottom-right-radius: 30px;
+    /* Redondea la esquina inferior derecha */
+    padding: 100px 0;
+    /* Añade espacio arriba y abajo */
+position: relative;
+margin-bottom: -30px;
+   
+  }
+  
+  
+  @media (max-width:450px)
+  {
+    .main-banner2 {
+  
+      background-image: url('../images/Header/Grupo\ Dragon_\ Header\ fondo\ 450x1000.jpg');
+      
+    }
+
+    .graciash1{
+        font-size: 40px!important;
+    }
+
+    .graciasp{
+        font-size: 15px!important;
+    }
+
+    .graciasfooter{
+        padding: 50px 20px 30px 20px!important;
+    }
+  }

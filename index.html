@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Dragon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nosotros.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/gestion.css">
+  <link rel="stylesheet" href="css/infraestructura.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="shortcut icon" href="images/Logo/Iso Rojo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/996b34cf47.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <div class="menu__wrapper" id="top">
+    <div class="menu__bar">
+      <a href="#inicio" title="Logo" class="logo">
+        <img src="images/Logo/Grupo Dragon_ Logo Blanco.png" alt="Logo" class="logo-img2" id="logo-img">
+      </a>
+      <img class="menu-icon" src="images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+        onclick="toggleMenu(this)">
+      <ul class="navigation">
+        <li><a href="#inicio" title="Inicio">Inicio</a></li>
+        <li><a href="#" id="link-nosotros">Nosotros</a></li>
+        <li><a href="#" id="link-proyectos">Proyectos Destacados</a></li>
+        <li><a href="#" id="link-servicios">Servicios Destacados</a></li>
+        <li><a href="#contacto" title="Contacto">Contacto</a></li>
+      </ul>
+ 
+      <script>
+        document.getElementById("link-nosotros").addEventListener("click", function () {
+          window.location.href = "Nosotros/";
+        });
+
+        document.getElementById("link-proyectos").addEventListener("click", function () {
+          window.location.href = "Proyectos destacados/";
+        });
+
+        document.getElementById("link-servicios").addEventListener("click", function () {
+          window.location.href = "Servicios destacados/";
+        });
+      </script>
+
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.navigation a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+  <style>
+    #logo-img {
+      transition: all 0.3s ease;
+    }
+  </style>
+
+  <div class="main-banner" id="inicio">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="header-text">
+            <h1>GRUPO DRAGÓN</h1>
+            <p>DESDE 1953, APORTANDO VALOR A LA INDUSTRIA ENERGÉTICA</p>
+            <a href="#contacto" class="btn-contact">
+              CONTACTO
+              <span class="arrow">➔</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="testimony1">
+    <div class="slider2">
+
+      <div class="slide2-track">
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_ypf.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Camuzzi.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Emgasud.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Grenergy.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_PAE.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Tecpetrol.png" alt=""
+            style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Termap.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_unitecenergy.png" alt=""
+            style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_vientos de la patagonia.png" alt=""
+            style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_abb.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_ypf.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Camuzzi.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Emgasud.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Grenergy.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_PAE.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Tecpetrol.png" alt=""
+            style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_Termap.png" alt="" style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_unitecenergy.png" alt=""
+            style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_vientos de la patagonia.png" alt=""
+            style="width: 150px; height: auto;">
+        </div>
+        <div class="slide2">
+          <img src="images/clients/logos empresas_Grupo Dragon_abb.png" alt="" style="width: 150px; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="sobre-nosotros">
+    <div class="about-content">
+      <h4>Sobre Nosotros</h4>
+      <h1>Grupo Dragón</h1>
+      <p>Es un grupo de empresas especializadas en soluciones integrales para la industria del petróleo y gas con bases
+        en Chubut y Santa Cruz. Con más de 70 años de experiencia y trayectoria, ofrecemos servicios de calidad
+        contribuyendo en la misión de generar valor creciente para los clientes, accionistas y empleados de la compañía.
+      </p>
+
+      <div class="image-gallery">
+        <div class="gallery-item" data-id="1">
+          <img src="images/Assets/nosotros/Botonera_ Sobre nosotros/Web Grupo Dragon desktop_ Botonera 1.png"
+            alt="Grenergy Logo 1">
+        </div>
+        <div class="gallery-item" data-id="2">
+          <img src="images/Assets/nosotros/Botonera_ Sobre nosotros/Web Grupo Dragon desktop_ Botonera 2.png"
+            alt="Grenergy Logo 2">
+        </div>
+        <div class="gallery-item" data-id="3">
+          <img src="images/Assets/nosotros/Botonera_ Sobre nosotros/Web Grupo Dragon desktop_ Botonera 3.png"
+            alt="Grenergy Logo 3">
+        </div>
+        <div class="gallery-item" data-id="4">
+          <img src="images/Assets/nosotros/Botonera_ Sobre nosotros/Web Grupo Dragon desktop_ Botonera 4.png"
+            alt="Grenergy Logo 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup 1 -->
+  <!-- Popup 1 -->
+  <div id="popup-1" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" data-id="1">&times;</span>
+      <div class="popup-left">
+        <img src="images/nosotros/logos empresas_Grupo Dragon_jomar.png" alt="Logo Empresa 1" class="popup-logo">
+      </div>
+      <div class="popup-right">
+
+        <p>
+          - Obras llave en mano para la industria del Oil & Gas, Plantas, baterías, PIAS. Oleoductos, gasoductos,
+          acueductos. <br>
+          - Construcción y Reparación de Tanques de almacenamiento.<br>
+          - Construcción y reparación de calentadores indirectos de petróleo.<br>
+          - Venta de combustibles y lubricantes.<br>
+          - Transporte de combustibles.<br>
+        </p>
+      </div>
+
+      <!-- Sección Informativa (Ahora fuera de .popup-right) -->
+      <div class="popup-info">
+        <div class="contact2-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <span style=" font-family: 'OpenSans-Light'; color: rgb(173, 173, 173);"> Encontranos en:</span><br>
+            <strong>Hipólito Yrigoyen 4485.<br>
+              Comodoro Rivadavia, Chubut.</strong>
+          </div>
+        </div>
+        <div class="contact2-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <span style=" font-family: 'OpenSans-Light';color: rgb(173, 173, 173);"> Llamanos al:</span><br>
+            <strong>
+              +54 (0297) 448 5499</strong>
+          </div>
+        </div>
+        <div class="contact2-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <span style=" font-family: 'OpenSans-Light';color: rgb(173, 173, 173);"> Envíanos un correo
+              al:</span></strong><br>
+            <strong> grupodragon@grupodragon.net<br>
+              rrhh@grupodragon.net</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Repetir para Popup 2, 3 y 4, cambiando los datos si es necesario -->
+  <!-- Popup 2 -->
+  <div id="popup-2" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" data-id="2">&times;</span>
+      <div class="popup-left">
+        <img src="images/nosotros/logos empresas_Grupo Dragon_Cañadon grande.png" alt="Logo Empresa 2"
+          class="popup-logo">
+      </div>
+      <div class="popup-right">
+        <p>
+          - Servicio de apoyo logístico y administrativo. <br>
+
+        </p>
+
+
+
+        <!-- Sección Informativa -->
+        <div class="popup-info">
+          <div class="contact2-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light'; color: rgb(173, 173, 173);"> Encontranos en:</span><br>
+              <strong>Hipólito Yrigoyen 4485.<br>
+                Comodoro Rivadavia, Chubut.</strong>
+            </div>
+          </div>
+          <div class="contact2-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light';color: rgb(173, 173, 173);"> Llamanos al:</span><br>
+              <strong>
+                +54 (0297) 448 5499</strong>
+            </div>
+          </div>
+          <div class="contact2-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light';color: rgb(173, 173, 173);"> Envíanos un correo
+                al:</span></strong><br>
+              <strong> grupodragon@grupodragon.net<br>
+                rrhh@grupodragon.net</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Repetir para Popup 3 y 4 -->
+  <!-- Popup 3 -->
+  <div id="popup-3" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" data-id="3">&times;</span>
+      <div class="popup-left">
+        <img src="images/nosotros/logos empresas_Grupo Dragon_NCDG.png" alt="Logo Empresa 3" class="popup-logo">
+      </div>
+      <div class="popup-right">
+
+        <p>- O&M de yacimientos. <br>
+          - Obras de infraestructura eléctrica. Estaciones transformadoras. Líneas eléctricas de MT y AT.<br>
+          - Electrificación de yacimientos.<br>
+          - Montaje electromecánico.<br>
+          - BOP parques eólicos.<br>
+          - Instalación de paneles fotovoltaicos.<br>
+        </p>
+
+        <!-- Sección Informativa -->
+        <div class="popup-info">
+          <div class="contact2-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light'; color: rgb(173, 173, 173);"> Encontranos en:</span><br>
+              <strong>Hipólito Yrigoyen 4485.<br>
+                Comodoro Rivadavia, Chubut.</strong>
+            </div>
+          </div>
+          <div class="contact2-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light';color: rgb(173, 173, 173);"> Llamanos al:</span><br>
+              <strong>
+                +54 (0297) 448 5499</strong>
+            </div>
+          </div>
+          <div class="contact2-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light';color: rgb(173, 173, 173);"> Envíanos un correo
+                al:</span></strong><br>
+              <strong> grupodragon@grupodragon.net<br>
+                rrhh@grupodragon.net</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup 4 -->
+  <div id="popup-4" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" data-id="4">&times;</span>
+      <div class="popup-left">
+        <img src="images/nosotros/logos empresas_Grupo Dragon_NCD.png" alt="Logo Empresa 4" class="popup-logo">
+      </div>
+      <div class="popup-right">
+        <h2></h2>
+        <p> - O&M Sistemas de distribución de energía eléctrica en MT. <br>
+
+          - Energía alternativa.<br>
+          - Alquiler de vehículos de transporte de personal.<br>
+
+          <!-- Sección Informativa -->
+        <div class="popup-info">
+          <div class="contact2-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light'; color: rgb(173, 173, 173);"> Encontranos en:</span><br>
+              <strong>Hipólito Yrigoyen 4485.<br>
+                Comodoro Rivadavia, Chubut.</strong>
+            </div>
+          </div>
+          <div class="contact2-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light';color: rgb(173, 173, 173);"> Llamanos al:</span><br>
+              <strong>
+                +54 (0297) 448 5499</strong>
+            </div>
+          </div>
+          <div class="contact2-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span style=" font-family: 'OpenSans-Light';color: rgb(173, 173, 173);"> Envíanos un correo
+                al:</span></strong><br>
+              <strong> grupodragon@grupodragon.net<br>
+                rrhh@grupodragon.net</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="team-section">
+    <div class="team-content">
+      <h1>NUESTRO EQUIPO</h1>
+      <p>Contamos con un plantel de más de 450 personas abocado a obras y servicios:</p>
+      <div class="statistics">
+        <div class="stat-item">
+          <h2>+60</h2>
+          <p>Profesionales</p>
+        </div>
+        <div class="stat-item">
+          <h2>+76</h2>
+          <p>Técnicos</p>
+        </div>
+        <div class="stat-item">
+          <h2>+25</h2>
+          <p>Administrativos</p>
+        </div>
+        <div class="stat-item">
+          <h2>+295</h2>
+          <p>Operarios idóneos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="management-system" id="servicios">
+    <div class="left-content">
+      <div class="text-content">
+        <h1>Sistema de gestión</h1>
+        <h4>Integrado desde 2002</h4>
+      </div>
+      <div class="horizontal-images">
+        <div class="image-item">
+          <img src="./images/Assets/sistema/rojo.jpg" alt="Gestión de calidad">
+
+        </div>
+        <div class="image-item">
+          <img src="./images/Assets/sistema/verde.jpg" alt="Gestión ambiental">
+
+        </div>
+        <div class="image-item">
+          <img src="./images/Assets/sistema/azul.jpg" alt="Gestión S&SO">
+
+        </div>
+        <div class="image-item">
+          <img src="./images/Assets/sistema/Grupo Dragon_ Gestión de Seguridad.jpg" alt="Gestión Seguridad vial">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="right-content">
+      <div class="services">
+        <h4>Obras y servicios</h4>
+
+        <h2>Mecánico</h2>
+        <p>Construcción y reparación de instalaciones de superficie para producción de hidrocarburos.</p>
+
+        <h2>Obras civiles</h2>
+        <p>Obras Públicas, yacimientos y parques eólicos.</p>
+
+        <h2>Transporte</h2>
+        <p>Cargas líquidas y sólidas.</p>
+
+        <h2>Montaje electromecánico</h2>
+        <p>Estaciones de bombeo. Plantas compresoras. Baterías y plantas de tratamiento de crudo. PIAS.</p>
+
+        <h2>Obra eléctrica</h2>
+        <p>Estaciones transformadoras A/T / M/T, líneas aéreas de transmisión de energía eléctrica y parques Eólicos.
+        </p>
+
+        <h2>O&M</h2>
+        <p>En yacimientos de hidrocarburos y gas. Sistemas de distribución de energía eléctrica en M/T.</p>
+
+        <!-- NUEVOS ÍTEMS -->
+        <h2>Izado de cargas</h2>
+        <p>Operaciones con grúas de hasta 100 Tn. Grúa TEREX 100/4L.</p>
+
+        <h2>Well Services</h2>
+        <p>Herramientas de perforación. Torque. Tapón y packer.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="infraestructura-section">
+    <div class="container2">
+      <h1>Infraestructura</h1>
+      <div class="infraestructura-content">
+        <div class="infraestructura-item">
+          <h2>Sede central</h2>
+          <p>Hipólito Irigoyen 4485.<br>Comodoro Rivadavia, Chubut.</p>
+        </div>
+        <div class="infraestructura-item">
+          <h2>Complejo industrial Las Heras</h2>
+          <p>RP43 km 138, Las Heras, Santa Cruz.</p>
+        </div>
+        <div class="infraestructura-item">
+          <h2>Planta industrial</h2>
+          <p>Tirso López N° 96.<br>Comodoro Rivadavia, Chubut.</p>
+        </div>
+        <div class="infraestructura-item">
+          <h2>Taller eléctrico</h2>
+          <p>Av. Libertador Gral. San Martín 1345 – Km 4 Comodoro Rivadavia, Chubut.</p>
+        </div>
+        <div class="infraestructura-item">
+          <h2>Base operativa Las Heras</h2>
+          <p>Fitz Roy y Koluel Kaike, Las Heras, Santa Cruz.</p>
+        </div>
+        <div class="infraestructura-item">
+          <h2>2 Bases operativas en Cañadón Seco</h2>
+          <p>B° Industrial<br>Cañadón Seco, Santa Cruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="equipamiento-section">
+    <div class="container">
+      <h1>Equipamiento productivo</h1>
+      <div class="equipamiento-content">
+        <div class="equip-item">
+          <h2>+172</h2>
+          <p>Pick-ups.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+1</h2>
+          <p>Camión motobomba.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+5</h2>
+          <p>Puentes grúa.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+25</h2>
+          <p>Minibuses, transporte de personal.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+1</h2>
+          <p>Camiones chupa.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+1</h2>
+          <p>Pantógrafo CNC, plasma y oxicorte.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+25</h2>
+          <p>Excavadoras & cargadoras.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+1</h2>
+          <p>Horno para secado de motores.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+1</h2>
+          <p>Cilindradora con precurvado.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+82</h2>
+          <p>Camiones, chasis y tractores articulados.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+25</h2>
+          <p>Carretones, semirremolques y acoplados.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+2</h2>
+          <p>Curvadora de caños y perfiles.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+1</h2>
+          <p>Grúa Terex 100 Tn.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+68</h2>
+          <p>Hidroguas, hidroelevadores y plataformas elevadoras.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+5</h2>
+          <p>Soldadora automática de arco sumergido.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+1</h2>
+          <p>Camión todo terreno.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+35</h2>
+          <p>Motogeneradores, motocompresores y motosoldadores.</p>
+        </div>
+        <div class="equip-item">
+          <h2>+1</h2>
+          <p>Laboratorio, ensayos y mediciones eléctricas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1134.2322077287936!2d-67.54263879703144!3d-45.896875133089324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgrupo%20dragon!5e0!3m2!1ses!2sar!4v1724336546079!5m2!1ses!2sar"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+
+    </div>
+    <div class="form-container" id="contacto">
+      <div class="form-background">
+        <h4>Contacto</h4>
+        <h1>Formulario</h1>
+        <form action="mailer.php" method="post">
+          <input type="text" name="name" placeholder="Nombre" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="tel" name="telefono" placeholder="Teléfono" required>
+          <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+          <!-- Google reCAPTCHA -->
+          <div class="captcha-container">
+            <div class="g-recaptcha" data-sitekey="6LeMnysqAAAAAMeH6wW5oSHTg5OZR0ns191HT6MC"></div>
+          </div>
+          <button type="submit" name="send">Enviar</button>
+          <p class="success-message">¡Formulario enviado con éxito!</p>
+          <p class="error-message">Error al enviar el formulario. Inténtalo nuevamente.</p>
+        </form>
+
+        <style>
+          /* Mensajes de éxito y error (inicialmente ocultos) */
+          .success-message,
+          .error-message {
+            display: none;
+            margin-top: 15px;
+            font-size: 14px;
+          }
+
+          .success-message {
+            color: #00cc66;
+          }
+
+          .error-message {
+            color: #ff6666;
+          }
+        </style>
+
+
+      </div>
+    </div>
+  </section>
+  <section class="contact-info">
+    <div class="contact-title">
+      <h2>Se parte de nuestro equipo</h2>
+    </div>
+    <div class="contact-details">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          Envíanos un correo al:</strong><br>
+          <strong>
+            rrhh@grupodragon.net</strong>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          Llamanos al:<br>
+          <strong>
+            +54 (0297) 448 5499</strong>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          Encontranos en:<br>
+          <strong>Hipólito Yrigoyen 4485.<br>
+            Comodoro Rivadavia, Chubut.</strong>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- División con sombra -->
+  <div class="divider"></div>
+
+  <!-- Footer -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <img src="images/Logo/Grupo Dragon_ Logo Negro.png" alt="Grupo Dragón Logo">
+    </div>
+    <div class="footer-right">
+      <!-- Contenedor para centrar el ícono y el copyright -->
+      <div class="footer-center">
+        <a href="https://www.linkedin.com/company/grupo-dragon-/?originalSubdomain=ar" target="_blank">
+          <img src="images/Assets/Footer/Grupo Dragon_ icono_ In.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <p style="color: black;">Copyright © 2024 Grupo Dragón</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* Estilos personalizados para centrar el reCAPTCHA */
+    .g-recaptcha {
+      display: inline-block;
+      /* Asegura que el recaptcha se trate como un elemento en línea */
+    }
+
+    .captcha-container {
+      text-align: center;
+      /* Centra el contenido del contenedor */
+      margin: 20px 0;
+      /* Añade margen superior e inferior para separación */
+    }
+  </style>
+
+  <script src="java/div.js"></script>
+  <script src="java/script.js"></script>
+  <script src="java/nav.js"></script>
+  <script src="java/scrolnav.js"></script>
+  <script src="java/logo.js"></script>
+  <script src="java/popup.js"></script>
+</body>
+
+</html>

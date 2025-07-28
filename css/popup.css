@@ -1,0 +1,189 @@
+/* Estilos del Popup */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    z-index: 1000; /* Asegura que esté por encima de todo el contenido */
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease; /* Animación de aparición */
+}
+
+.popup-content {
+    position: relative;
+    background-image: url('../images/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_\ Desplegable\ fondo.jpg'); /* Imagen de fondo del popup */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width:1000px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column; /* Permite apilar contenido verticalmente */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra alrededor del popup */
+    color: white;
+    border-radius: 8px;
+    height: auto; /* Altura automática */
+}
+
+
+.popup-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.popup-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.popup-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px; /* Espacio inferior para separar del footer */
+}
+
+.popup-right h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.popup-right p {
+    font-family: 'OpenSans-Regular';
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Animación de Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* Animación de Fade Out */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+.popup-info {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    margin-top: auto; /* Empuja la información hacia la parte inferior del popup */
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: #e74c3c; /* Color del ícono */
+}
+
+.info-item span {
+    color: #fff; /* Color del texto */
+    font-size: 1rem;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+.contact2-item {
+    display: flex;
+    align-items: center;
+    /* Alinea los íconos y el texto verticalmente en el centro */
+    text-align: left;
+    font-size: 1rem;
+    color: #fffefe;
+    /* Color del texto para asegurar legibilidad */
+    max-width: 300px;
+}
+
+.contact2-item i {
+    font-size: 2rem;
+    color: #fffefe;
+    margin-right: 15px;
+    /* Espacio entre el ícono y el texto */
+}
+
+.contact2-item div {
+    line-height: 1.5;
+}
+
+/* Ajustes para la versión móvil */
+@media screen and (max-width: 768px) {
+    .popup-left, .popup-right {
+        display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: left; /* Mantiene el texto alineado a la izquierda */
+        margin-bottom: 15px; /* Añade margen inferior */
+    }
+
+    .popup-logo {
+        max-width: 150px; /* Ajusta el tamaño del logo para móviles */
+        margin-bottom: 15px; /* Añade espacio entre el logo y el texto */
+    }
+
+    .popup-right h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título en móviles */
+    }
+
+    .popup-right p {
+        font-size: 1rem; /* Reduce el tamaño del texto en móviles */
+    }
+
+    .popup-info {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5%;
+        gap: 10px; /* Añadir espacio entre elementos */
+        margin-top: 15px; /* Asegura un margen en la parte superior */
+        padding-top: 10px;
+        
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .info-item {
+        justify-content: center; /* Centra los elementos informativos */
+    }
+
+    .popup-close {
+        top: 10px;
+        right: 10px;
+        font-size: 2.5rem; /* Reduce el tamaño del botón de cerrar */
+    }
+}

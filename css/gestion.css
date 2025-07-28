@@ -1,0 +1,143 @@
+/* Sección Sistema de Gestión */
+.management-system {
+    display: flex;
+
+    background-color: #f5f5f5; /* Fondo claro general */
+}
+
+.left-content, .right-content {
+    width: 50%; /* Divide la sección en dos columnas */
+    position: relative;
+}
+
+.left-content {
+    background-image: url('../images/Assets/sistema/Grupo\ Dragon_\ Sistema\ de\ gestion_\ Fondo.jpg'); /* Imagen de fondo izquierda */
+    background-size: cover;
+    background-position: center;
+    padding: 140px 80px;
+}
+
+.right-content {
+    background-image: url('../images/Assets/sistema/Grupo\ Dragon_\ Obras\ y\ servicios_\ Fondo.jpg'); /* Imagen de fondo derecha */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 160px;
+    color: #fff;
+    
+    /* Centrando el contenido */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.text-content h1 {
+    font-family: 'OpenSans-Bold';
+    font-size: 2.5rem;
+    color: #333; /* Color oscuro del texto */
+    -webkit-text-stroke: 1px #333;
+    margin-bottom: 20px;
+}
+
+.text-content h4 {
+    font-family: 'OpenSans-Light';
+    font-size: 1.2rem;
+    color: #e74c3c; /* Color rojo */
+    margin-bottom: 40px;
+}
+
+.horizontal-images {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.image-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    padding: 20px 0px;
+    
+}
+
+.image-item img {
+    max-width: 100%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    transition: all 0.3s ease;
+}
+.image-item:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+
+.image-item p {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.image-item span {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.services h4 {
+    font-size: 1rem;
+    font-family: 'OpenSans-Bold';
+    margin-bottom: 20px;
+}
+
+.services h2 {
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.services p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #dcdcdc;
+}
+/* Responsive Design - Móviles */
+@media (max-width: 768px) {
+    .management-system {
+        flex-direction: column; /* Cambia la dirección del flex a columna en móviles */
+    }
+
+    .left-content, .right-content {
+        width: 100%; /* Asegura que ambas secciones ocupen el ancho completo */
+        padding: 40px 40px; /* Reduce el padding para móviles */
+    }
+
+    .text-content h1 {
+        font-size: 2rem; /* Ajusta el tamaño de fuente para móviles */
+    }
+
+    .text-content h4 {
+        font-size: 1rem; /* Ajusta el tamaño de fuente para móviles */
+    }
+
+    .horizontal-images {
+        gap: 15px; /* Reduce el espacio entre imágenes para móviles */
+    }
+
+    .right-content {
+        padding: 40px 40px; /* Alinea el padding con la izquierda */
+        text-align: center; /* Centra el texto para una mejor legibilidad en móviles */
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        text-align: left; /* Mantiene el texto alineado a la izquierda */
+    }
+
+   
+}
+
