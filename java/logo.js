@@ -1,9 +1,16 @@
 window.addEventListener('scroll', function() {
     const logoImg = document.getElementById('logo-img');
-    if (window.scrollY > 50) {  // Ajusta este valor según el momento en que quieras que se cambie el logo
-        logoImg.src = '../images/Logo/Grupo Dragon_ Logo Negro.png'; // Ruta de la imagen negra
+
+    // Detectar si estamos en la raíz o en una subcarpeta
+    const isRoot = location.pathname === "/index.html" || location.pathname === "/";
+
+    // Definir las rutas según la ubicación
+    const blackLogo = isRoot ? "images/Logo/Grupo Dragon_ Logo Negro.png" : "../images/Logo/Grupo Dragon_ Logo Negro.png";
+    const whiteLogo = isRoot ? "images/Logo/Grupo Dragon_ Logo Blanco.png" : "../images/Logo/Grupo Dragon_ Logo Blanco.png";
+
+    if (window.scrollY > 50) {
+        logoImg.src = blackLogo;
     } else {
-        logoImg.src = '../images/Logo/Grupo Dragon_ Logo Blanco.png'; // Ruta de la imagen blanca
+        logoImg.src = whiteLogo;
     }
 });
-
