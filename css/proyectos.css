@@ -78,7 +78,7 @@ header a {
 
 .carousel .list .item .topic {
     font-family: 'OpenSans-Bold';
-    color: #f1683a;
+  color: #dd1e1e;
    text-transform: uppercase;
 }
 
@@ -152,7 +152,7 @@ header a {
     position: absolute;
     top: 80%;
     right: 52%;
-    z-index: 100;
+    z-index: 1;
     width: 300px;
     max-width: 30%;
     display: flex;
@@ -170,6 +170,7 @@ header a {
     font-family: monospace;
     font-weight: bold;
     transition: .5s;
+
 }
 
 .arrows button:hover {
@@ -352,7 +353,10 @@ header a {
 @media screen and (max-width: 678px) {
     .carousel .list .item .content {
         padding-right: 0;
+        padding: 25px;
+        top: 20%;
     }
+
 
     .carousel .list .item .content .title {
         font-size: 20px;
@@ -366,19 +370,41 @@ header a {
     }
 
   
-
+.des{
+    font-size: 17px;
+}
 
     .thumbnail {
         position: absolute;
         bottom: 30px;
         left: 50%;
         width: max-content;
-        z-index: 100;
+        z-index: 1;
         display: flex;
         gap: 20px;
     }
 
+   .thumbnail .item {
+    width: 110px;   /* ajustá según gusto */
+    height: 160px;  /* proporción similar */
+  }
 
+  .thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
 
+  .thumbnail .item .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 8px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
 
+    box-sizing: border-box;
+  }
 }
