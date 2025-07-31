@@ -4,7 +4,7 @@ const toggleMenu = () => {
   const src = burgerMenu.getAttribute("src");
 
   // Detectar si estamos en la raíz o en una subcarpeta
-  const isRoot = location.pathname === "/index.html" || location.pathname === "/";
+  const isRoot = location.pathname === "index.html" || location.pathname === "/";
 
   const burgerPath = isRoot ? "images/burger-menu.svg" : "../images/burger-menu.svg";
   const closePath = isRoot ? "images/close.svg" : "../images/close.svg";
