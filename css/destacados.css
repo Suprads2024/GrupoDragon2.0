@@ -1,5 +1,5 @@
 .social-section {
-  background-image: url('../images/Grupo\ Dragon_\ Header\ fondo.jpg'); /* Ajustar según tu estructura de carpetas */
+  background-image: url('../images/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_\ Fondo.jpg'); /* Ajustar según tu estructura de carpetas */
   background-size: cover;
   background-position: center;
   padding: 100px 20px 60px; /* MÁS ESPACIO ARRIBA */
@@ -35,19 +35,19 @@ border-radius: 15px;
   z-index: 1;
 }
 
-.card:nth-child(1) .icon {   background-image: url('../images/serviciosdestacados/Servicio\ de\ Obras.png'); /* Ajustar según tu estructura de carpetas */
+.card:nth-child(1) .icon {   background-image: url('../images/serviciosdestacados/Servicio\ de\ Obra.webp'); /* Ajustar según tu estructura de carpetas */
   background-size: cover;
   background-position: center; }
-.card:nth-child(2) .icon {  background-image: url('../images/serviciosdestacados/Reparacion\ de\ tanques.png'); /* Ajustar según tu estructura de carpetas */
+.card:nth-child(2) .icon {  background-image: url('../images/serviciosdestacados/Reparacion\ de\ tanques\ Blanco.webp'); /* Ajustar según tu estructura de carpetas */
   background-size: cover;
   background-position: center; }
-.card:nth-child(3) .icon {  background-image: url('../images/serviciosdestacados/Reparación\ de\ Calentadores.png'); /* Ajustar según tu estructura de carpetas */
+.card:nth-child(3) .icon {  background-image: url('../images/serviciosdestacados/Reparación\ de\ Calentadores\ Blanco.webp'); /* Ajustar según tu estructura de carpetas */
   background-size: cover;
   background-position: center; }
-.card:nth-child(4) .icon {  background-image: url('../images/serviciosdestacados/Servicio\ de\ Tracing.png'); /* Ajustar según tu estructura de carpetas */
+.card:nth-child(4) .icon {  background-image: url('../images/serviciosdestacados/Servicio\ de\ Tracing\ Blanco.webp'); /* Ajustar según tu estructura de carpetas */
   background-size: cover;
   background-position: center;}
-.card:nth-child(5) .icon {  background-image: url('../images/serviciosdestacados/O&MYacimientos.png'); /* Ajustar según tu estructura de carpetas */
+.card:nth-child(5) .icon {  background-image: url('../images/serviciosdestacados/O&M\ de\ Yacimientos\ Blanco.webp'); /* Ajustar según tu estructura de carpetas */
   background-size: cover;
   background-position: center;}
 
@@ -82,7 +82,7 @@ i {
 
 .card .face.face1 {
   position: relative;
-  background: #333;
+  background: #f0efef;
   display: flex;
   justify-content: center;
   align-items: center;
