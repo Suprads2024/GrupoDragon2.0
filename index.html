@@ -21,11 +21,12 @@
   <div class="menu__wrapper" id="top">
     <div class="menu__bar">
       <a href="#inicio" title="Logo" class="logo">
-        <img src="images/Logoblanco.png" alt="Logo" class="logo-img2" id="logo-img-index">
+        <img src="images/Logo/Logoblanco.png" alt="Logo" class="logo-img2" id="logo-img-index">
       </a>
 
-      <img class="menu-icon" src="images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
-        onclick="toggleMenu(this)">
+      <img class="menu-icon" id="menu-icon-index" src="images/abrir.svg" title="Burger Menu" alt="Burger Menu"
+        onclick="toggleMenuIndex()">
+
       <ul class="navigation">
         <li><a href="#inicio" title="Inicio">Inicio</a></li>
         <li><a href="#" id="link-nosotros">Nosotros</a></li>
@@ -706,9 +707,14 @@
 
   <script src="java/div.js"></script>
   <script src="java/script.js"></script>
+  <!-- Script de menus desplegables los demas archivos-->
   <script src="java/nav.js"></script>
+  <!-- Script de los menus desplegables index-->
+  <script src="java/navindex.js"></script>
   <script src="java/scrolnav.js"></script>
+  <!-- Script logo de las demas archivos-->
   <script src="java/logo.js"></script>
+  <!-- Script logo de pagina principal -->
   <script src="java/logoindex.js"></script>
   <script src="java/popup.js"></script>
 </body>
