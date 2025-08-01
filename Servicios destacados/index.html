@@ -78,15 +78,13 @@
 <!-- Sección con 5 tarjetas en dos filas: 3 arriba y 2 abajo -->
 <div class="social-section">
   <div class="container">
+
     <!-- Fila 1: contenedor de 3 tarjetas -->
     <div class="row">
-      <div class="card">
+      <div class="card card1">
         <div class="face face1">
           <div class="content">
-            <div class="icon">
-             
-        
-            </div>
+            <div class="icon"></div>
           </div>
         </div>
         <div class="face face2">
@@ -100,13 +98,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card card2">
         <div class="face face1">
           <div class="content">
-            <div class="icon">
-            
-          
-            </div>
+            <div class="icon"></div>
           </div>
         </div>
         <div class="face face2">
@@ -119,13 +114,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card card3">
         <div class="face face1">
           <div class="content">
-            <div class="icon">
-          
-             
-            </div>
+            <div class="icon"></div>
           </div>
         </div>
         <div class="face face2">
@@ -141,13 +133,10 @@
 
     <!-- Fila 2: contenedor de 2 tarjetas -->
     <div class="row">
-      <div class="card">
+      <div class="card card4">
         <div class="face face1">
           <div class="content">
-            <div class="icon">
-         
-            
-            </div>
+            <div class="icon"></div>
           </div>
         </div>
         <div class="face face2">
@@ -160,13 +149,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card card5">
         <div class="face face1">
           <div class="content">
-            <div class="icon">
-          
-         
-            </div>
+            <div class="icon"></div>
           </div>
         </div>
         <div class="face face2">
@@ -179,10 +165,27 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
+    <!--Script para manejar el codigo de el click en las cards -->
 
+<script>
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function () {
+      // Si ya está activa, cerrala
+      if (this.classList.contains('active')) {
+        this.classList.remove('active');
+      } else {
+        // Cerramos otras activas
+        document.querySelectorAll('.card.active').forEach(c => c.classList.remove('active'));
+        // Activamos esta
+        this.classList.add('active');
+      }
+    });
+  });
+</script>
 
 
 

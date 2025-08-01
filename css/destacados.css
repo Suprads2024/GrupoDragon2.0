@@ -1,8 +1,8 @@
 .social-section {
-  background-image: url('../images/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_\ Fondo.jpg'); /* Ajustar según tu estructura de carpetas */
+  background-image: url('../images/nosotros/Grupo Dragon_ Sobre nosotros_ Fondo.jpg');
   background-size: cover;
   background-position: center;
-  padding: 100px 20px 60px; /* MÁS ESPACIO ARRIBA */
+  padding: 100px 20px 60px;
 }
 
 .container {
@@ -19,9 +19,8 @@
 }
 
 .card {
-    cursor: pointer;
+  cursor: pointer;
   position: relative;
-
 }
 
 .card .icon {
@@ -30,26 +29,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-border-radius: 15px;
+  border-radius: 15px;
   transition: 0.7s;
   z-index: 1;
 }
 
-.card:nth-child(1) .icon {   background-image: url('../images/serviciosdestacados/Servicio\ de\ Obra.webp'); /* Ajustar según tu estructura de carpetas */
+.card1 .icon {
+  background-image: url('../images/serviciosdestacados/Servicio de Obra.webp');
+}
+.card2 .icon {
+  background-image: url('../images/serviciosdestacados/Reparacion de tanques Blanco.webp');
+}
+.card3 .icon {
+  background-image: url('../images/serviciosdestacados/Reparación de Calentadores Blanco.webp');
+}
+.card4 .icon {
+  background-image: url('../images/serviciosdestacados/Servicio de Tracing Blanco.webp');
+}
+.card5 .icon {
+  background-image: url('../images/serviciosdestacados/O&M de Yacimientos Blanco.webp');
+}
+
+/* Común a todas */
+.card .icon {
   background-size: cover;
-  background-position: center; }
-.card:nth-child(2) .icon {  background-image: url('../images/serviciosdestacados/Reparacion\ de\ tanques\ Blanco.webp'); /* Ajustar según tu estructura de carpetas */
-  background-size: cover;
-  background-position: center; }
-.card:nth-child(3) .icon {  background-image: url('../images/serviciosdestacados/Reparación\ de\ Calentadores\ Blanco.webp'); /* Ajustar según tu estructura de carpetas */
-  background-size: cover;
-  background-position: center; }
-.card:nth-child(4) .icon {  background-image: url('../images/serviciosdestacados/Servicio\ de\ Tracing\ Blanco.webp'); /* Ajustar según tu estructura de carpetas */
-  background-size: cover;
-  background-position: center;}
-.card:nth-child(5) .icon {  background-image: url('../images/serviciosdestacados/O&M\ de\ Yacimientos\ Blanco.webp'); /* Ajustar según tu estructura de carpetas */
-  background-size: cover;
-  background-position: center;}
+  background-position: center;
+}
 
 .card .icon .fa {
   position: absolute;
@@ -58,7 +63,6 @@ border-radius: 15px;
   transform: translate(-50%, -50%);
   font-size: 80px;
   transition: 0.7s;
-  
   color: #fff;
 }
 
@@ -70,7 +74,6 @@ i {
   font-size: 80px;
   transition: 0.7s;
   color: #fff;
-  
 }
 
 .card .face {
@@ -86,23 +89,22 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-
   z-index: 1;
   transform: translateY(100px);
 }
 
-.card:hover .face.face1 {
-
+.card:hover .face.face1,
+.card.active .face.face1 {
   transform: translateY(0px);
 }
 
 .card .face.face1 .content {
   opacity: 1;
   transition: 0.5s;
-  
 }
 
-.card:hover .face.face1 .content {
+.card:hover .face.face1 .content,
+.card.active .face.face1 .content {
   opacity: 1;
 }
 
@@ -111,7 +113,7 @@ i {
 }
 
 .card-title {
-    font-family: 'OpenSans-Bold';
+  font-family: 'OpenSans-Bold';
   margin-top: 150px;
   font-size: 16px;
   text-align: center;
@@ -121,7 +123,7 @@ i {
 }
 
 .card .face.face2 {
-     font-family: 'OpenSans-Medium';
+  font-family: 'OpenSans-Medium';
   position: relative;
   background: #fff;
   display: flex;
@@ -129,23 +131,25 @@ i {
   align-items: center;
   padding: 5px 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   transform: translateY(-100px);
   min-height: 130px;
   max-height: 100px;
   overflow-y: auto;
 }
 
+.card:hover .face.face2,
+.card.active .face.face2 {
+  transform: translateY(0);
+}
+
 .card .face.face2 .content ul {
   margin: 5px 0;
   padding-left: 18px;
 }
-.card:hover .face.face2 {
-  transform: translateY(0);
-}
 
 .card .face.face2 .content p {
-    font-family: 'OpenSans-Medium';
+  font-family: 'OpenSans-Medium';
   margin: 0;
   padding: 0;
   text-align: center;
@@ -158,17 +162,16 @@ i {
   font-size: 24px;
   text-align: center;
   color: #414141;
-} 
+}
 
 .container a {
   text-decoration: none;
   color: #414141;
 }
 
-@media (max-width:786px){
-    
-.container {
-  width:0px;
-  margin: auto;
-}
+@media (max-width: 786px) {
+  .container {
+    width: 0px;
+    margin: auto;
+  }
 }
