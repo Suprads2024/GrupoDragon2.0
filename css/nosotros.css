@@ -10,6 +10,7 @@
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     text-align: left; /* Mantiene el texto alineado a la izquierda */
+    height: 100vh;
 }
 
 .about-content h4 {
