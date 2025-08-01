@@ -354,6 +354,36 @@ header a {
     }
 }
 
+@media screen and (min-width: 2400px) {
+  .carousel .list .item .content {
+    width: 1600px; /* Más ancho */
+    padding-right: 20%; /* Opcional: podés ajustar si querés menos margen */
+  }
+
+  .carousel .list .item .title,
+  .carousel .list .item .topic {
+    font-size: 3.5em; /* Aumentás el tamaño del texto */
+  }
+
+  .carousel .list .item .content .des {
+    font-size: 2em; /* El texto descriptivo también se agranda */
+    line-height: 1.6em;
+  }
+
+  /* arrows */
+
+.arrows button{
+    width: 80px;
+    height: 80px;
+}
+  .carousel .list .item .buttons button {
+    font-size: 1em;
+    width: 150px;
+    grid-template-columns: repeat(2, 150px);
+  }
+}
+
+
 @media screen and (max-width: 678px) {
     .carousel .list .item .content {
         padding-right: 0;
