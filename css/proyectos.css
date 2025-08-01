@@ -130,7 +130,10 @@ header a {
 }
 
 .thumbnail .item .content {
-    color: #fff;
+  color: #ffffff;
+   background-color: rgba(0, 0, 0, 0.322); /* oscuro pero transparente */   
+   padding: 10px;
+   border-radius: 10px;
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -145,6 +148,7 @@ header a {
 .thumbnail .item .content .description {
     font-family: 'OpenSans-Regular';
     font-weight: 300;
+    color: white;
 }
 
 /* arrows */
@@ -408,3 +412,4 @@ header a {
     box-sizing: border-box;
   }
 }
+
