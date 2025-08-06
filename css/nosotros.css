@@ -1,21 +1,29 @@
 /* Sección Sobre Nosotros */
 .about-section {
     padding: 60px 0;
-    background-image: url('../images/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_\ Fondo.jpg'); /* Ruta a tu imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra todo el div */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url('../images/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_\ Fondo.jpg');
+    /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el div */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
     color: #fff;
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    text-align: left; /* Mantiene el texto alineado a la izquierda */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    text-align: left;
+    /* Mantiene el texto alineado a la izquierda */
     height: 100vh;
 }
 
 .about-content h4 {
     font-family: 'OpenSans-Light';
-    color: #ed5050; /* Color rojo para el subtítulo */
+    color: #ed5050;
+    /* Color rojo para el subtítulo */
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
@@ -58,31 +66,39 @@
     height: 100%;
     object-fit: cover;
     transition: all 0.3s ease;
-    filter: grayscale(100%); /* Imagen en blanco y negro por defecto */
+    filter: grayscale(100%);
+    /* Imagen en blanco y negro por defecto */
 }
 
 .gallery-item:hover img {
     filter: grayscale(0%);
-    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
-   
+    transform: scale(1.1);
+    /* Efecto de zoom al pasar el mouse */
+
 }
 
 /* Sección Nuestro Equipo */
 .team-section {
-   
+
     padding: 80px 0 40px 0px;
-    background-image: url('../images/Assets/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_\ Nuestro\ equipo_Fondo.jpg'); /* Imagen de fondo */
+    background-image: url('../images/Assets/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_\ Nuestro\ equipo_Fondo.jpg');
+    /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     color: #fff;
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    text-align: left; /* Mantiene el texto alineado a la izquierda */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    text-align: left;
+    /* Mantiene el texto alineado a la izquierda */
 }
+
 /* Contenedor para limitar el ancho del contenido */
 .team-content {
-    max-width: 800px; /* Ajusta según el tamaño deseado */
+    max-width: 800px;
+    /* Ajusta según el tamaño deseado */
     width: 100%;
 }
 
@@ -90,7 +106,7 @@
     font-family: 'OpenSans-Bold';
     font-size: 2.5rem;
     margin-bottom: 20px;
-  
+
 }
 
 .team-content p {
@@ -115,8 +131,9 @@
 .stat-item h2 {
     font-size: 5rem;
     margin-bottom: 10px;
-    -webkit-text-stroke: 1px #ffffff;  
-    color: #ffffff; /* Rojo para los números */
+    -webkit-text-stroke: 1px #ffffff;
+    color: #ffffff;
+    /* Rojo para los números */
 }
 
 .stat-item p {
@@ -124,55 +141,71 @@
     font-size: 1.2rem;
     color: #fff;
 }
+
 /* Estilo para dispositivos móviles */
 @media (max-width: 768px) {
     .about-section {
-        padding-left: 10%; /* Reduce el margen izquierdo en dispositivos móviles */
-        padding-right: 10%; /* Añade un margen derecho para centrar el contenido mejor */
-        align-items: center; /* Centra verticalmente */
-        justify-content: center; /* Centra horizontalmente */
-        text-align: left; /* Mantiene el texto alineado a la izquierda */
+        padding-left: 10%;
+        /* Reduce el margen izquierdo en dispositivos móviles */
+        padding-right: 10%;
+        /* Añade un margen derecho para centrar el contenido mejor */
+        align-items: center;
+        /* Centra verticalmente */
+        justify-content: center;
+        /* Centra horizontalmente */
+        text-align: left;
+        /* Mantiene el texto alineado a la izquierda */
     }
-
+ .about-section {
+        height: auto;
+       
+    }
     .about-content {
-        width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
-        max-width: none; /* Elimina la limitación del ancho máximo */
+        width: 100%;
+        /* Asegura que el contenido ocupe todo el ancho disponible */
+        max-width: none;
+        /* Elimina la limitación del ancho máximo */
     }
-    
-.gallery-item {
-    
-    width: 90px;
-    height: 90px;
-  
-}
-.statistics {
-    
-    gap: 15px;
-    
-}
 
-.stat-item {
-  
-     flex: 1 1 40%; /* Ajuste predeterminado para pantallas más grandes */
-   
-}
-.stat-item h2 {
-    font-size: 1.5rem;
-  
-}
+    .gallery-item {
 
-.stat-item p{
-    font-size: 1rem;
-}
+        width: 90px;
+        height: 90px;
+
+    }
+
+    .statistics {
+
+        gap: 15px;
+
+    }
+
+    .stat-item {
+
+        flex: 1 1 40%;
+        /* Ajuste predeterminado para pantallas más grandes */
+
+    }
+
+    .stat-item h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .stat-item p {
+        font-size: 1rem;
+    }
 
 
-.team-section{
-    background-image: url('../images/Assets/nosotros/Grupo\ Dragon_\ Nuestro\ equipo_395\ x\ 600.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-}
-.team-content h1{
-    font-size: 1.7rem;
-}
+    .team-section {
+        background-image: url('../images/Assets/nosotros/Grupo\ Dragon_\ Nuestro\ equipo_395\ x\ 600.jpg');
+        /* Imagen de fondo */
+        background-size: cover;
+        background-position: center;
+        padding: 40px;
+    }
+
+    .team-content h1 {
+        font-size: 1.7rem;
+    }
 }
