@@ -21,19 +21,19 @@
 </head>
 
 <body>
-  <div class="menu__wrapper" id="top">
-    <div class="menu__bar">
-      <a href="#" id="inicio"title="Logo" class="logo">
-        <img src="../images/Logo/Grupo Dragon_ Logo Blanco.png" alt="Logo" class="logo-img2" id="logo-img">
-      </a>
-      <img class="menu-icon" src="../images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
-        onclick="toggleMenu(this)">
-      <ul class="navigation">
+    <div class="menu__wrapper" id="top">
+        <div class="menu__bar">
+            <a href="../" title="Logo" class="logo">
+                <img src="../images/Logo/Grupo Dragon_ Logo Blanco.png" alt="Logo" class="logo-img2" id="logo-img">
+            </a>
+            <img class="menu-icon" src="../images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+                onclick="toggleMenu(this)">
+                <ul class="navigation">
         <li><a href="../index.html" id="inicio" title="Inicio">Inicio</a></li>
         <li><a href="#" id="link-nosotros">Nosotros</a></li>
         <li><a href="#" id="link-proyectos">Proyectos Destacados</a></li>
         <li><a href="#" id="link-servicios">Servicios Destacados</a></li>
-        <li><a href="#" id="contacto" title="Contacto">Contacto</a></li>
+       <li><a href="#" id="contacto" title="Contacto">Contacto</a></li>
       </ul>
  
       <script>
@@ -41,38 +41,40 @@
           window.location.href = "../";
         });
 
-        document.getElementById("link-nosotros").addEventListener("click", function () {
-          window.location.href = "../Nosotros/";
-        });
+       
 
         document.getElementById("link-proyectos").addEventListener("click", function () {
           window.location.href = "../Proyectos destacados/";
         });
 
+        document.getElementById("link-nosotros").addEventListener("click", function () {
+          window.location.href = "../Nosotros/";
+        });
+
+        
                document.getElementById("contacto").addEventListener("click", function () {
           window.location.href = "../index.html#contacto";
         });
       </script>
-
-      
+        </div>
     </div>
-  </div>
-  <script>
-    document.querySelectorAll('.navigation a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+    <script>
+        document.querySelectorAll('.navigation a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
-      });
-    });
-  </script>
+    </script>
 
-  <style>
-    #logo-img {
-      transition: all 0.3s ease;
-    }
-  </style>
+    <style>
+        #logo-img {
+            transition: all 0.3s ease;
+        }
+    </style>
+
 
 
 <!-- Sección con 5 tarjetas en dos filas: 3 arriba y 2 abajo -->
@@ -85,6 +87,7 @@
         <div class="face face1">
           <div class="content">
             <div class="icon"></div>
+            <h3 class="titulo">Servicio de Obras Menores</h3>
           </div>
         </div>
         <div class="face face2">
@@ -102,6 +105,7 @@
         <div class="face face1">
           <div class="content">
             <div class="icon"></div>
+            <h3 class="titulo">Reparación de Tanques</h3>
           </div>
         </div>
         <div class="face face2">
@@ -118,6 +122,7 @@
         <div class="face face1">
           <div class="content">
             <div class="icon"></div>
+            <h3 class="titulo">Reparación de Calentadores</h3>
           </div>
         </div>
         <div class="face face2">
@@ -137,6 +142,7 @@
         <div class="face face1">
           <div class="content">
             <div class="icon"></div>
+            <h3 class="titulo">Servicio de Tracing y Revestimiento Térmico</h3>
           </div>
         </div>
         <div class="face face2">
@@ -153,6 +159,7 @@
         <div class="face face1">
           <div class="content">
             <div class="icon"></div>
+            <h3 class="titulo">O&M de Yacimientos</h3>
           </div>
         </div>
         <div class="face face2">
@@ -168,6 +175,7 @@
 
   </div>
 </div>
+
 
     <!--Script para manejar el codigo de el click en las cards -->
 

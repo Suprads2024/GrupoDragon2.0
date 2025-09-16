@@ -40,28 +40,43 @@
   z-index: 1;
 }
 
+/* Íconos individuales */
 .card1 .icon {
-  background-image: url('../images/serviciosdestacados/Servicio de Obra.webp');
+  background-image: url('../images/serviciosdestacados/fondoservicios.png');
 }
 .card2 .icon {
-  background-image: url('../images/serviciosdestacados/Reparacion de tanques Blanco.webp');
+  background-image: url('../images/serviciosdestacados/fondoservicios.png');
 }
 .card3 .icon {
-  background-image: url('../images/serviciosdestacados/Reparación de Calentadores Blanco.webp');
+  background-image: url('../images/serviciosdestacados/fondoservicios.png');
 }
 .card4 .icon {
-  background-image: url('../images/serviciosdestacados/Servicio de Tracing Blanco.webp');
+  background-image: url('../images/serviciosdestacados/fondoservicios.png');
 }
 .card5 .icon {
-  background-image: url('../images/serviciosdestacados/O&M de Yacimientos Blanco.webp');
+  background-image: url('../images/serviciosdestacados/fondoservicios.png');
 }
 
-/* Común a todas */
+/* Común a todas las cards */
 .card .icon {
-  background-size: cover;
+
   background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
+/* Títulos de cada tarjeta */
+.titulo {
+    font-family: 'OpenSans-Bold'!important;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+
+  margin: 12px 20px;
+  text-align: center;
+}
+
+/* Si seguís usando FontAwesome dentro del .icon */
 .card .icon .fa {
   position: absolute;
   top: 50%;
@@ -71,6 +86,7 @@
   transition: 0.7s;
   color: #fff;
 }
+
 
 i {
   position: absolute;
@@ -154,12 +170,8 @@ i {
   padding-left: 18px;
 }
 
-.card .face.face2 .content p {
-  font-family: 'OpenSans-Medium';
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #414141;
+.content ul{
+   font-family: 'OpenSans-Medium';
 }
 
 .card .face.face2 .content h3 {
