@@ -2,7 +2,7 @@
   background-image: url('../images/nosotros/Grupo Dragon_ Sobre nosotros_ Fondo.jpg');
   background-size: cover;
   background-position: center;
-  padding: 100px 20px 60px;
+  padding: 10px 20px 60px;
   height: 100vh;
   min-height: 100vh;
   
@@ -10,6 +10,116 @@
   flex-direction: column;
   justify-content: center;
 }
+
+/* ====== Vars ====== */
+:root{
+  --bg:#000000;
+  --tile:#3e3d42;
+  --text:#e9eef9;
+  --muted:#cfd6e6;
+  --hover:#d72b36;         /* rojo hover */
+}
+
+/* ====== Section ====== */
+.svc{ background:var(--bg); padding:72px 20px; }
+.svc-wrap{ max-width:1200px; margin:0 auto; }
+
+.svc-title{
+  margin:0 0 36px;
+  text-align:center;
+  font-family:'LeagueSpartan-Bold', system-ui, Arial, sans-serif;
+  font-weight:800;
+  font-size:clamp(28px, 4.2vw, 46px);
+  color:var(--text);
+  padding-top: 50px;
+}
+
+/* ====== Grid ====== */
+.svc-grid{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(240px, 1fr));
+  gap:26px;
+  align-items:stretch;
+}
+
+/* ====== Card ====== */
+.svc-card{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  height:100%;
+  min-height:270px;
+  padding:22px 20px;
+  background:var(--tile);
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow:0 10px 24px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.04);
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.svc-card:hover{
+  transform:translateY(-3px);
+  border-color:var(--hover);
+  box-shadow:0 16px 32px rgba(0,0,0,.32), 0 0 0 6px rgba(215,43,54,.28);
+}
+
+/* ===== Icono ===== */
+.svc-icon{
+  width:48px; height:48px;
+  display:grid; place-items:center;
+
+  overflow:hidden;
+}
+.svc-icon img{
+  width:100%; height:100%;
+  object-fit:contain;
+  display:block;
+  /* convierte íconos negros en blancos */
+  filter: brightness(0) invert(1);
+  opacity:0.92;
+  transition:opacity .25s ease;
+}
+.svc-card:hover .svc-icon img{
+  opacity:1;
+}
+/* Título + lista */
+.svc-h3{
+  margin:6px 0 0;
+  font:700 19px/1.2 'LeagueSpartan-Bold', system-ui, Arial, sans-serif;
+  color:var(--text);
+}
+.svc-list{
+  margin:8px 0 0;
+  padding-left:0;
+  list-style:none;
+  color:var(--muted);
+  font:500 15px/1.55 'LeagueSpartan-Regular', system-ui, Arial, sans-serif;
+}
+.svc-list li{
+  position:relative;
+  padding-left:18px;
+  margin:6px 0;
+}
+.svc-list li::before{
+  content:"";
+  position:absolute; left:0; top:.62em;
+  width:8px; height:8px; border-radius:2px;
+  background:#ffffff;          /* bullets en blanco */
+  box-shadow:0 0 0 3px rgba(255,255,255,.12);
+}
+
+/* ====== Responsive ====== */
+@media (max-width:1100px){
+  .svc-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); }
+}
+@media (max-width:900px){
+  .svc-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .svc-card{ min-height:240px; }
+}
+@media (max-width:560px){
+  .svc{ padding:56px 16px; }
+  .svc-title{ margin-bottom:26px; }
+}
+
 
 .container {
   width: 1400px;

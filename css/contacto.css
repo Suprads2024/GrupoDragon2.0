@@ -1,0 +1,210 @@
+/* ===== SECCIÓN CONTACTO (scope completo) ===== */
+.gd-contact {
+  --accent: #d72b36;
+  --ink: #ffffff;
+  --ink-muted: rgba(255, 255, 255, 0.7);
+  --surface: #1b1f24;
+  --stroke: rgba(255, 255, 255, 0.16);
+
+  background: #14171b;
+  padding: clamp(64px, 9vw, 120px) 20px 64px; /* aire superior */
+  color: var(--ink);
+}
+
+/* ===== LAYOUT GENERAL ===== */
+.gd-contact__wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;  /* proporción form / info */
+  gap: clamp(20px, 3.5vw, 40px);
+  align-items: start;                    /* el panel derecho no se estira */
+}
+
+/* ===== COLUMNA FORM ===== */
+/* Usamos display: contents para que los títulos ocupen la fila completa
+   y el <form> quede en la fila siguiente, alineable con el panel derecho */
+.gd-contact__form { 
+  display: contents;
+}
+
+/* Títulos cruzan ambas columnas (fila superior) */
+.gd-contact__form h4,
+.gd-contact__form h1 {
+  grid-column: 1 / -1;
+}
+
+/* Estilo de títulos */
+.gd-contact__form h4 {
+    font-family: 'OpenSans-Medium';
+  color: var(--accent);
+  margin: 0 0 6px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.gd-contact__form h1 {
+  margin: 0 0 18px;
+  font-size: clamp(32px, 4.2vw, 56px);
+  line-height: 1.05;
+}
+
+/* El formulario vive en la columna izquierda (segunda fila) */
+.gd-contact__form form {
+  grid-column: 1;
+  display: grid;
+  gap: 12px;
+}
+.gd-contact .captcha-container { margin: 8px 0; }
+
+/* Inputs y textarea */
+.gd-contact input,
+.gd-contact textarea {
+  width: 100%;
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+  padding: 14px 16px;
+  font: 500 16px/1.3 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+.gd-contact textarea { min-height: 140px; resize: vertical; }
+.gd-contact input::placeholder,
+.gd-contact textarea::placeholder { color: var(--ink-muted); }
+
+.gd-contact input:focus,
+.gd-contact textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(215, 43, 54, 0.25);
+}
+
+/* Botón */
+.gd-contact button[type="submit"] {
+  width: 100%;
+  font-family: 'OpenSans-Medium';
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 14px 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .18s, box-shadow .18s, background .18s;
+}
+.gd-contact button[type="submit"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(215, 43, 54, 0.32);
+}
+.gd-contact button[type="submit"]:active { transform: translateY(0); }
+
+/* Mensajes del form */
+.gd-contact .success-message,
+.gd-contact .error-message {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.gd-contact .success-message { color: #00cc66; }
+.gd-contact .error-message { color: #ff6666; }
+
+/* ===== COLUMNA INFO (panel derecho, alto AUTO sin huecos) ===== */
+.gd-contact__info {
+  grid-column: 2;                 /* misma fila que el <form> */
+  align-self: start;              /* alinea el top con el primer input */
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: 12px;
+  padding: 16px;
+  justify-self: center;
+  width: 100%;
+  max-width: 520px;
+  /* ❌ Quitamos height:100% y el flex con space-between para evitar huecos */
+  display: block;                 /* altura según contenido */
+}
+
+.gd-contact__info .info-block { margin-bottom: 14px; }
+.gd-contact__info h3 { font-family: 'OpenSans-Bold';margin: 2px 0 8px; font-size: 20px; }
+
+.gd-contact__info .info-item{
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--stroke);
+}
+.gd-contact__info .info-item:last-child { border-bottom: 0; }
+
+.gd-contact__info .ico{
+  width: 24px; height: 24px;
+  display: inline-grid; place-items: center;
+}
+.gd-contact__info .ico svg{
+  width: 20px; height: 20px;
+  fill: var(--ink); opacity: .9;
+}
+
+.gd-contact__info .title{ font-family: 'OpenSans-Bold';font-weight: 700; }
+.gd-contact__info .sub{   font-family: 'OpenSans-Regular';margin-top:10px; color: var(--ink-muted); font-size: 13.5px; }
+
+.gd-contact__info .link{
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+.gd-contact__info .link:hover{ color: var(--accent); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px){
+  .gd-contact__wrap { grid-template-columns: 1fr; }
+  .gd-contact__info {
+    max-width: 640px;
+    margin-top: 50px;   /* cae debajo del form, centrado */
+  }
+}
+/* ===== Mobile / Tablet: el panel pasa abajo y ocupa el ancho ===== */
+@media (max-width: 900px){
+  .gd-contact{
+    padding: 48px 16px 56px; /* un poco menos de padding en mobile */
+  }
+
+  .gd-contact__wrap{
+    margin-top: 50px;
+    grid-template-columns: 1fr !important;  /* fuerza una sola columna */
+    gap: 18px;
+  }
+
+  /* Títulos y form ocupan la misma columna */
+  .gd-contact__form h4,
+  .gd-contact__form h1{
+    grid-column: 1;
+  }
+  .gd-contact__form form{
+    grid-column: 1;
+  }
+
+  /* Panel derecho debajo del form, full width */
+  .gd-contact__info{
+    grid-column: 1;
+    justify-self: stretch;   /* ocupa todo el ancho disponible */
+    width: 100%;
+    max-width: none;
+    margin-top: 6px;         /* separación del formulario */
+  }
+
+  /* Detalles visuales para mobile */
+  .gd-contact__info .info-item{
+    grid-template-columns: 22px 1fr;
+    gap: 8px;
+    padding: 10px 0;
+  }
+  .gd-contact__info h3{ font-size: 18px; }
+  .gd-contact__info .sub{ font-size: 13px; }
+}
+
+/* Extra-chico (teléfonos angostos) */
+@media (max-width: 480px){
+  .gd-contact__info{ padding: 14px; border-radius: 10px; }
+  .gd-contact button[type="submit"]{ padding: 16px; }
+  .gd-contact input,
+  .gd-contact textarea{ padding: 12px 14px; }
+}

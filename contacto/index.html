@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Dragon - Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/gestion.css">
+    <link rel="stylesheet" href="../css/infraestructura.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/destacados.css">
+    <link rel="stylesheet" href="../css/somos.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="shortcut icon" href="../images/Logo/Iso Rojo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/996b34cf47.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</head>
+
+<body>
+    <div class="menu__wrapper" id="top">
+        <div class="menu__bar">
+            <a href="../" title="Logo" class="logo">
+                <img src="../images/Logo/Grupo Dragon_ Logo Blanco.png" alt="Logo" class="logo-img2" id="logo-img">
+            </a>
+            <img class="menu-icon" src="../images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
+                onclick="toggleMenu(this)">
+            <ul class="navigation">
+                <li><a href="../index.html" id="inicio" title="Inicio">Inicio</a></li>
+                <li><a href="#" id="link-nosotros">Nosotros</a></li>
+                <li><a href="#" id="link-proyectos">Proyectos Destacados</a></li>
+                <li><a href="#" id="link-servicios">Servicios Destacados</a></li>
+                <li><a href="#" title="Contacto">Contacto</a></li>
+            </ul>
+
+            <script>
+                document.getElementById("inicio").addEventListener("click", function () {
+                    window.location.href = "../";
+                });
+
+
+
+                document.getElementById("link-proyectos").addEventListener("click", function () {
+                    window.location.href = "../Proyectos destacados/";
+                });
+
+                document.getElementById("link-servicios").addEventListener("click", function () {
+                    window.location.href = "../Servicios destacados/";
+                });
+
+
+                document.getElementById("link-nosotros").addEventListener("click", function () {
+                    window.location.href = "../Nosotros";
+                });
+            </script>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.navigation a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <style>
+        #logo-img {
+            transition: all 0.3s ease;
+        }
+    </style>
+
+    <section class="gd-contact" id="contacto">
+        <div class="gd-contact__wrap">
+            <!-- Columna: Formulario -->
+            <div class="gd-contact__form">
+                <h4>Contacto</h4>
+                <h1>Formulario para Consultas</h1>
+
+                <form action="mailer.php" method="post">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+                    <div class="captcha-container">
+                        <div class="g-recaptcha" data-sitekey="6LeMnysqAAAAAMeH6wW5oSHTg5OZR0ns191HT6MC"></div>
+                    </div>
+
+                    <button type="submit" name="send">Enviar</button>
+
+                    <p class="success-message">¡Formulario enviado con éxito!</p>
+                    <p class="error-message">Error al enviar el formulario. Inténtalo nuevamente.</p>
+                </form>
+            </div>
+
+            <!-- Columna: Info (solo lo permitido) -->
+            <aside class="gd-contact__info" aria-labelledby="infoTitle">
+                <div class="info-block">
+                    <h3>Ubicaciones</h3>
+
+                    <div class="info-item">
+                        <span class="ico" aria-hidden="true">
+                            <!-- Pin -->
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="title">Hipólito Irigoyen 4485</div>
+                            <div class="sub">Comodoro Rivadavia, Chubut</div>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="title">Fitz Roy y Koluel Kaike</div>
+                            <div class="sub">Las Heras, Santa Cruz</div>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="title">Ruta Prov. 43 Km 135, Parque Industrial</div>
+                            <div class="sub">Las Heras, Santa Cruz</div>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="ico" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="title">Mitre 827</div>
+                            <div class="sub">Neuquén Capital</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>Contacto</h3>
+                    <div class="info-item">
+                        <span class="ico" aria-hidden="true">
+                            <!-- Teléfono -->
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l2-2c.3-.3.8-.4 1.2-.3 1 .3 2 .5 3 .5.7 0 1.3.6 1.3 1.3V20c0 .7-.6 1.3-1.3 1.3C8.7 21.3 2.7 15.3 2.7 7.6 2.7 6.9 3.3 6.3 4 6.3H7c.7 0 1.3.6 1.3 1.3 0 1 .2 2 .5 3 .1.4 0 .9-.3 1.2l-2 2z" />
+                            </svg>
+                        </span>
+                        <a class="link" href="tel:+5492974485499">+54 9 (0297) 448-5499</a>
+                    </div>
+
+                    <!-- IMPORTANTE: NO mostrar correos ni web -->
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Cargar reCAPTCHA si no está global -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+
+
+
+
+    <!-- División con sombra -->
+    <div class="divider"></div>
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <img src="../images/Logo/Grupo Dragon_ Logo Negro.png" alt="Grupo Dragón Logo">
+        </div>
+        <div class="footer-right">
+            <!-- Contenedor para centrar el ícono y el copyright -->
+            <div class="footer-center">
+                <a href="https://www.linkedin.com/company/grupo-dragon-/?originalSubdomain=ar" target="_blank">
+                    <img src="../images/Assets/Footer/Grupo Dragon_ icono_ In.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <p style="color: black;">Copyright © 2024 Grupo Dragón</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Estilos personalizados para centrar el reCAPTCHA */
+        .g-recaptcha {
+            display: inline-block;
+            /* Asegura que el recaptcha se trate como un elemento en línea */
+        }
+
+        .captcha-container {
+            text-align: center;
+            /* Centra el contenido del contenedor */
+            margin: 20px 0;
+            /* Añade margen superior e inferior para separación */
+        }
+    </style>
+
+    <script src="../java/div.js"></script>
+    <script src="../java/script.js"></script>
+    <script src="../java/nav.js"></script>
+    <script src="../java/scrolnav.js"></script>
+    <script src="../java/logo.js"></script>
+    <script src="../java/popup.js"></script>
+</body>
+
+</html>

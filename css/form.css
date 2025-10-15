@@ -43,7 +43,7 @@
     -webkit-text-stroke: 1px #fff;
     margin-bottom: 30px;
     font-family: 'OpenSans-Bold';
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /* Estilos del formulario */
@@ -81,6 +81,70 @@ form button:hover {
     background-color: #c0392b; /* Color más oscuro en hover */
 }
 
+
+/* === NUEVA SECCIÓN "SÉ PARTE DE NUESTRO EQUIPO" === */
+.join-team {
+  margin-top: 22px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 5px;
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  display: grid;
+  gap: 8px;
+}
+
+.join-team h3 {
+      font-family: 'OpenSans-Bold';
+  margin: 0;
+  font-size: clamp(18px, 2.2vw, 22px);
+  line-height: 1.2;
+  color: #fff;
+}
+
+.join-copy {
+    font-family: 'OpenSans-Regular';
+  color: #cfd6e6;
+  font-size: 15px;
+}
+
+.join-email {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(215,43,54,.12);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  border: 1px solid rgba(215,43,54,.35);
+  transition: background .2s, transform .18s, box-shadow .18s;
+}
+
+.join-email:hover {
+  background: #d72b36;
+  box-shadow: 0 10px 22px rgba(215,43,54,.28);
+  transform: translateY(-1px);
+}
+.map-container {
+  --header-h: 56px; /* altura aproximada de la cabecera a ocultar */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* recorta la parte superior */
+  
+
+}
+
+/* desplazamos el iframe hacia arriba para ocultar la cabecera */
+.map-container iframe {
+  position: absolute;
+  top: calc(-1 * var(--header-h));
+  left: 0;
+  width: 100%;
+  height: calc(100% + var(--header-h));
+  border: 0;
+}
+
 /* Responsive Design para móviles */
 @media (max-width: 768px) {
     .contact-section {
@@ -94,16 +158,18 @@ form button:hover {
 
     .form-container {
         width: 100%;
-       
+       padding-top: 10px;
+       padding-bottom: 10px;
          /* Formulario ocupa el 70% de la altura */
     }
 
     .form-background {
-        padding: 40px 20px;
+        padding: 10px 10px;
      
         width: 90%; /* Aumenta el ancho en dispositivos móviles */
         max-width: 100%;
         color: #fff;
+    
     }
 
     .form-background h4 {

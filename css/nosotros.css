@@ -17,7 +17,7 @@
     /* Centra horizontalmente */
     text-align: left;
     /* Mantiene el texto alineado a la izquierda */
-    height: 100vh;
+    height: 70vh;
 }
 
 .about-content h4 {
@@ -156,10 +156,12 @@
         text-align: left;
         /* Mantiene el texto alineado a la izquierda */
     }
- .about-section {
+
+    .about-section {
         height: auto;
-       
+
     }
+
     .about-content {
         width: 100%;
         /* Asegura que el contenido ocupe todo el ancho disponible */
@@ -209,3 +211,284 @@
         font-size: 1.7rem;
     }
 }
+
+/* ====== SGI — base ====== */
+:root {
+    --bg: #0e1116;
+    --tile: #3b4250;
+    --txt: #e9ecf4;
+    --muted: #b8c0d9;
+    --gap: 8px;
+    /* separación entre divisiones (>=5px) */
+
+    /* Colores de hover */
+    --c1: #4cc9f0;
+    --c2: #80ed99;
+    --c3: #fca311;
+    --c4: #e85d75;
+}
+
+.sgi {
+    background: var(--bg);
+    padding: 56px 20px;
+    color: var(--txt);
+}
+
+.sgi-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.sgi-title {
+    font-family: system-ui, "League Spartan", Poppins, Arial, sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 52px);
+    line-height: 1.1;
+    margin: 0 0 30px;
+}
+
+/* Escenario para centrar rueda y colocar rótulos alrededor */
+.sgi-stage {
+    position: relative;
+}
+
+.sgi-wheel {
+    position: relative;
+    margin: 54px auto 30px;
+    width: min(60vw, 420px);
+    height: min(60vw, 420px);
+    filter: drop-shadow(0 14px 24px rgba(0, 0, 0, .4));
+}
+
+/* Divisiones (cuartos) */
+.slice {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: var(--tile);
+    display: grid;
+    place-items: center;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06);
+    transition: background .25s, transform .25s, box-shadow .25s;
+
+    /* separador limpio entre divisiones */
+    outline: var(--bg) solid 6px;
+    /* controla el ancho de la separación */
+    background-clip: padding-box;
+    border-radius: 0;
+    /* evitamos solapado extraño */
+}
+
+.slice .ico {
+    width: 28px;
+    height: 28px;
+    fill: #cfd6e6;
+    transition: fill .25s, transform .25s
+}
+
+/* Forma circular por cuadrante */
+.s1 {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 100%;
+    margin: 0 var(--gap) var(--gap) 0;
+}
+
+.s2 {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 100%;
+    margin: 0 0 var(--gap) var(--gap);
+}
+
+.s3 {
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 100%;
+    margin: var(--gap) var(--gap) 0 0;
+}
+
+.s4 {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 100%;
+    margin: var(--gap) 0 0 var(--gap);
+}
+
+/* Centro “donut” */
+.hub {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    width: 38%;
+    height: 38%;
+    transform: translate(-50%, -50%);
+    background: var(--bg);
+    border-radius: 50%;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, .07);
+    pointer-events: none;
+}
+
+/* Hovers de color por cuadrante */
+.s1:hover {
+    background: var(--c1);
+}
+
+.s2:hover {
+    background: var(--c2);
+}
+
+.s3:hover {
+    background: var(--c3);
+}
+
+.s4:hover {
+    background: var(--c4);
+}
+
+.s1:hover .ico,
+.s2:hover .ico,
+.s3:hover .ico,
+.s4:hover .ico {
+    fill: #0b1321;
+    transform: scale(1.06);
+}
+
+.slice:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+/* ===== Rótulos (cerca de cada división) ===== */
+.iso-tag {
+    position: absolute;
+    width: 220px;
+    line-height: 1.25;
+    color: var(--txt);
+    text-align: center;
+}
+
+.iso-tag h3 {
+    margin: 0 0 6px;
+    font-size: clamp(15px, 1.8vw, 20px)
+}
+
+.iso-tag p {
+    margin: 0;
+    color: var(--muted);
+    font-size: clamp(13px, 1.6vw, 16px)
+}
+
+/* Posiciones relativas al borde del círculo */
+.t1 {
+    /* arriba-izquierda */
+    top: 10%;
+    left: 10%;
+    transform: translate(-110%, -30%);
+    text-align: right;
+}
+
+.t2 {
+    /* arriba-derecha */
+    top: 10%;
+    right: 10%;
+    transform: translate(110%, -30%);
+    text-align: left;
+}
+
+.t3 {
+    /* abajo-izquierda */
+    bottom: 10%;
+    left: 10%;
+    transform: translate(-110%, 30%);
+    text-align: right;
+}
+
+.t4 {
+    /* abajo-derecha */
+    bottom: 10%;
+    right: 10%;
+    transform: translate(110%, 30%);
+    text-align: left;
+}
+
+/* (Opcional) que el texto tome el color del hover si el navegador soporta :has() */
+@supports selector(:has(*)) {
+    .sgi-wheel:has(.s1:hover) .t1 h3 {
+        color: var(--c1);
+    }
+
+    .sgi-wheel:has(.s2:hover) .t2 h3 {
+        color: var(--c2);
+    }
+
+    .sgi-wheel:has(.s3:hover) .t3 h3 {
+        color: var(--c3);
+    }
+
+    .sgi-wheel:has(.s4:hover) .t4 h3 {
+        color: var(--c4);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .sgi-title{
+        font-size: 25px;
+    }
+.sgi-wrap{
+    padding-top: 50px;
+}
+
+  /* 🔸 Círculo 10% más chico */
+  .sgi-wheel {
+    width: min(50vw, 140px);
+    height: min(50vw, 140px);
+  }
+
+  /* 🔸 Textos un poquito más chicos */
+  .iso-tag {
+    width: 110px;
+    font-size: 9.5px;
+  }
+  .iso-tag h3 {
+    font-size: 10.5px;
+  }
+  .iso-tag p {
+    font-size: 9px;
+  }
+
+  /* 🔸 Reajuste final de posiciones */
+  .t1 {
+    top: 3%; left: 3%;
+    transform: translate(-120%, -5%);
+    text-align: right;
+  }
+  .t2 {
+    top: 3%; right: 3%;
+    transform: translate(120%, -5%);
+    text-align: left;
+  }
+  .t3 {
+    bottom: 3%; left: 3%;
+    transform: translate(-120%, 5%);
+    text-align: right;
+  }
+  .t4 {
+    bottom: 3%; right: 3%;
+    transform: translate(120%, 5%);
+    text-align: left;
+  }
+}
+@media (max-width: 389px) {
+  /* 🔸 Círculo 10% más chico */
+  .sgi-wheel {
+    width: min(50vw, 120px);
+    height: min(50vw, 120px);
+  }}
+

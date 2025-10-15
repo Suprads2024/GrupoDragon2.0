@@ -120,7 +120,7 @@ h1 {
 }
 
 .equip-item {
-    
+     font-family: 'OpenSans-Bold';
     flex: 1 1 30%; /* Ajusta los elementos a 30% del contenedor */
     min-width: 280px; /* Asegura que los elementos tengan un tamaño mínimo */
 }
@@ -141,7 +141,7 @@ h1 {
 @media (max-width:786px){
 
     .equipamiento-section h1{
-        -webkit-text-stroke: 0.5px #fff; 
+       
 font-size: 1.5rem;
     }
     

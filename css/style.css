@@ -378,7 +378,7 @@ Banner Style
   /* Centra la imagen */
   background-repeat: no-repeat;
   /* Evita que la imagen se repita */
-  height: 100vh;
+  height: 75vh;
   border-bottom-left-radius: 30px;
   /* Redondea la esquina inferior izquierda */
   border-bottom-right-radius: 30px;
