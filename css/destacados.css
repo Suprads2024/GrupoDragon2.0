@@ -27,7 +27,7 @@
 .svc-title{
   margin:0 0 36px;
   text-align:center;
-  font-family:'LeagueSpartan-Bold', system-ui, Arial, sans-serif;
+    font-family: 'OpenSans-Bold';
   font-weight:800;
   font-size:clamp(28px, 4.2vw, 46px);
   color:var(--text);
@@ -84,7 +84,7 @@
 /* Título + lista */
 .svc-h3{
   margin:6px 0 0;
-  font:700 19px/1.2 'LeagueSpartan-Bold', system-ui, Arial, sans-serif;
+  font:700 19px/1.2 'OpenSans-Bold';
   color:var(--text);
 }
 .svc-list{
@@ -92,7 +92,7 @@
   padding-left:0;
   list-style:none;
   color:var(--muted);
-  font:500 15px/1.55 'LeagueSpartan-Regular', system-ui, Arial, sans-serif;
+  font:500 15px/1.55 'OpenSans-Regular';
 }
 .svc-list li{
   position:relative;
