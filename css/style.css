@@ -435,34 +435,65 @@ Banner Style
   
 }
 
+/* Contenedor para los botones */
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* separación entre los botones */
+}
+
+/* Botón base: Contacto */
 .btn-contact {
   display: inline-block;
   padding: 10px 15px;
-  background-color: transparent; /* Fondo transparente */
-  color: #ffffff; /* Color del texto en blanco */
-  border: 2px solid #ffffff; /* Borde blanco */
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
   font-size: 1rem;
-  margin-left: 10px;
   font-weight: 750;
   text-decoration: none;
-  transition: all 0.1s ease; /* Suave transición en todos los cambios */
+  transition: all 0.2s ease;
 }
 
 .btn-contact .arrow {
   margin-left: 10px;
-
   font-size: 1.2rem;
 }
 
 .btn-contact:hover {
   background-color: #ed2e38;
-  /* Color rojo del botón */
   color: #333333;
-  /* Color del texto del botón */
   border: none;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
+
+/* Nuevo botón: Descargar PDF */
+.btn-download {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-download .arrow {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.btn-download:hover {
+  background-color: #585858; /* azul para diferenciarlo del rojo */
+  color: #ffffff;
+  border: none;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
 
 
 
