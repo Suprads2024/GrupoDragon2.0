@@ -465,6 +465,10 @@
 
 @media (max-width: 600px) {
 
+
+    .sgi{
+        padding: 50px 0px 26px 26px;
+    }
     .sgi-title{
         font-size: 25px;
     }

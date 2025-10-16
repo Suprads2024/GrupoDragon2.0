@@ -112,12 +112,16 @@
   .svc-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); }
 }
 @media (max-width:900px){
-  .svc-grid{ grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .svc-h3{ font-size: 1.5rem;}
+  .svc-list li{ font-size: 1.3rem;}
+  .svc-grid{ grid-template-columns:repeat(1, minmax(0,1fr)); }
   .svc-card{ min-height:240px; }
 }
 @media (max-width:560px){
+  
   .svc{ padding:56px 16px; }
-  .svc-title{ margin-bottom:26px; }
+  .svc-title{ margin-bottom:35px;
+  padding-top: 70px; }
 }
 
 

@@ -111,9 +111,7 @@
   font-size: 14px;
       line-height: 1.5;
 }
-  .about-section{
-    padding-top: 130px;
-  }
+  
   .values {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
